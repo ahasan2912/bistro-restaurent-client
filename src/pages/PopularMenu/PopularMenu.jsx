@@ -2,10 +2,11 @@
 import SectionTitle from '../../components/SectionTitle';
 import MenuItemCard from '../../Routes/Shared/MenuItemCard';
 import UseMenu from '../../hooks/UseMenu';
+import { Link } from 'react-router-dom';
 
 const PopularMenu = () => {
-        const [menu] = UseMenu();
-        const popular = menu.filter(item => item.category === 'popular')
+    const [menu] = UseMenu();
+    const popular = menu.filter(item => item.category === 'popular')
     return (
         <section className='mb-12'>
             <SectionTitle
@@ -18,7 +19,9 @@ const PopularMenu = () => {
                 }
             </div>
             <div className='my-5 text-center'>
-                <button className="btn btn-outline border-0 border-b-4">Order Now</button>
+                <Link to='/order'>
+                    <button className="btn btn-outline border-0 border-b-4">Order Now</button>
+                </Link>
             </div>
         </section>
     );

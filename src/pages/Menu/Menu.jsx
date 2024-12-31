@@ -27,9 +27,10 @@ const Menu = () => {
             <SectionTitle subHeading={"Don't miss"} heading={"Today's Offer"}>
             </SectionTitle>
             <MenuCategory items={offered}></MenuCategory>
-            <MenuCategory items={dessert} title={"Dessert"} bgImg={dessertImg}></MenuCategory>
-            <MenuCategory items={pizza} title={"Pizza"} bgImg={pizzaImg}></MenuCategory>
-            <MenuCategory items={pizza} title={"Pizza"} bgImg={saladImg}></MenuCategory>
+            <MenuCategory items={dessert} title={"dessert"} bgImg={dessertImg}></MenuCategory>
+            <MenuCategory items={pizza} title={"pizza"} bgImg={pizzaImg}></MenuCategory>
+            <MenuCategory items={salad} title={"salad"} bgImg={pizzaImg}></MenuCategory>
+            <MenuCategory items={soup} title={"soup"} bgImg={pizzaImg}></MenuCategory>
         </div>
     );
 };

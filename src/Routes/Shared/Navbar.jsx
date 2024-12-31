@@ -8,8 +8,9 @@ function classNames(...classes) {
 
 const Navbar = () => {
     const navigation = [
-        { name: 'Home', to: '/', current: true },
-        { name: "Menu", to: '/menu', current: true }
+        { name: 'Home', to:'/', current: true },
+        { name: "Menu", to:'/menu', current: true },
+        { name: "Order Food",to: '/order/salad', current: true }
     ]
     return (
         <Disclosure as="nav" className="bg-gray-800">
@@ -27,7 +28,7 @@ const Navbar = () => {
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex shrink-0 items-center">
                             <Link to="/">
-                                <h1 className='text-2xl md:text-3xl font-semibold uppercase'>Bistro Boss</h1>
+                                <h1 className='text-2xl md:text-3xl font-semibold uppercase text-white'>Bistro Boss</h1>
                             </Link>
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
