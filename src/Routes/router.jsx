@@ -3,6 +3,9 @@ import MainLayOut from "../layout/MainLayOut";
 import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 import Order from "../pages/Order/Order";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+import PirvetRouter from "../providers/PirvetRouter";
 
 
 
@@ -21,7 +24,15 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/order/:category',
-                element: <Order></Order>
+                element: <PirvetRouter><Order></Order></PirvetRouter>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     },
